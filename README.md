@@ -22,15 +22,41 @@ Checkout or download this repository inside the webroot of a PHP enabled webserv
 
 ### Dictionary
 
-| Letter | Definition |
+| What | Definition |
 | :---: | :---: |
-| a | Analytics |
-| dm | Dimensions & Metrics |
-| r | Redirect |
+| _a | Analytics |
+| _dm | Dimensions & Metrics |
+| _r & r | Redirect |
 | c | Cookies |
 | t | Track |
 | h | Hit Type |
 | e | Event |
-| p | Page |
+| p | Page(view) |
+| a | Action |
+| d[0-9] | Dimension |
+| m[0-9] | Metric |
+
+### Building a URL (by examples)
+
+* Track an event with action "foobar"
+
+`http://mytrackdomain.com/ta/t.php?h=e&a=foobar`
+
+* Track a pageview with url "/barqux"
+
+`http://mytrackdomain.com/ta/t.php?h=p&p=barqux`
+
+* Track an event using cookied parameters
+
+`http://mytrackdomain.com/ta/c.php?h=e&a=eventname`
+
+* Tracking with dimensions and metrics
+
+`http://mytrackdomain.com/ta/t.php?h=e&a=eventaction&d1=dimension1value&m1=metric1value`
+
+#### Doesn't get it?
+`h` is Hit Type `e` is event, so `h=e` is Event Hit Type.
+Then `p` is Pageview so `h=p` is Pageview Hit Type.
+
 
 ![WTFPL Badge](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)
