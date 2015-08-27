@@ -10,4 +10,5 @@ if (isset($_GET['r']) && $_GET['r'] == 'no') {
 
 $_GET = array_merge($queryString, $_GET);
 
-header('Location: p.php?'.http_build_query($_GET));
+
+header('Location: t.php?'.http_build_query($_GET));
