@@ -19,3 +19,5 @@ Track any kind of action in a Google Analytics account even out of a page you co
 
 ## To use
 Checkout or download this repository inside the webroot of a PHP enabled webserver, replace the current UA id at [_analytics.js](ta/_analytics.js) for someone you own and go to [display.html](example/display.html) thought your web browser.
+
+![WTFPL Badge](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)
