@@ -1,7 +1,6 @@
 <?php
 
-session_start();
-$queryString = $_SESSION['queryString'];
+$queryString = $_COOKIE['queryString'];
 $queryString = unserialize($queryString);
 
 $_GET = array_merge($queryString, $_GET);

@@ -1,7 +1,4 @@
-<?php 
-  session_start();
-  $_SESSION['queryString'] = serialize($_GET);
-?>
+<?php setcookie('queryString', serialize($_GET), time() + 60 * 60 * 24 * 28); // 24 months (2 years) ?>
 <!DOCTYPE html>
 <html>
 <head>
